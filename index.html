@@ -7,16 +7,17 @@
 .header {
   overflow: hidden;
   background-color: rgb(255,0,83);
-  padding: 20px 10px;  
+  padding: 20px 10px; 
+  border-radius:10px;
 }
 
 .header a {
   float: left;
   color: white;
   text-align: center;
-  padding: 12px;
+  padding: 15px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 40px;
   line-height: 25px;
   border-radius: 4px;
 }
@@ -30,6 +31,11 @@
 
 .header a:hover {
   background-color: rgb(255,0,150);
+  color: white;
+}
+
+.header a.active {
+  background-color: rgb(255,105,180);
   color: white;
 }
 
@@ -53,14 +59,20 @@
     </head>
     
     <body>
-<div class="header">
-  <a href="#default" class="logo">Merl's Cakery</a>
-  <div class="header-right">
-    <a href="#home">Cakes</a>
-    <a href="#about">About</a>
-  </div>
-</div>
-        
+
+        <div class="header">
+  
+            <a href="#default" class="logo">Merl's Cakery</a>
+  
+            <div class="header-right">
+    
+                <a href="#home" class="active">Cakes</a>
+    
+                <a href="#about">About</a>
+  
+            </div>
+
+        </div>
     </body>
     
 </html>
